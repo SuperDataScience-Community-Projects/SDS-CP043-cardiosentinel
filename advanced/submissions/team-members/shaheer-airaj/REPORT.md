@@ -4,50 +4,50 @@
 
 📦 1. Data Integrity & Structure  
 Q: Are there any missing, duplicate, or inconsistent entries in the dataset?  
-A:  
+A: Nope, data is fairly consistent 
 
 Q: Are all feature data types appropriate (e.g., numeric, categorical)?  
-A:  
+A: Some binary features were labeled as integer which should be actually categorical data
 
 Q: Did you detect any irrelevant, constant, or low-variance features that might be removed?  
-A:  
+A: None 
 
 🎯 2. Target Variable Assessment  
 Q: What is the distribution of the Heart_Attack_Risk target variable (0 = Not at Risk, 1 = At Risk)?  
-A:  
+A: 64% class 0 and 35% class 1 
 
 Q: Is there a class imbalance between the two target classes? If so, how severe is it?  
-A:  
+A: Imbalance is not severe. We can continue as is.
 
 Q: How might this imbalance affect your model choice or evaluation metrics later on?  
-A:  
+A: No significant imbalance detected 
 
 📊 3. Feature Distribution & Quality  
 Q: Which numerical features (e.g., Age, Cholesterol, BloodPressure, HeartRate) are skewed or contain outliers?  
-A:  
+A: No outliers detected 
 
 Q: Did any features contain unrealistic or problematic values that may require capping or removal?  
-A:  
+A: None 
 
 Q: What transformation or normalization techniques might improve these distributions?  
-A:  
+A: Distributions are ideal so no transformations required
 
 📈 4. Feature Relationships & Patterns  
 Q: Which categorical features (e.g., Smoking, AlcoholConsumption, Diet, PhysicalActivity) show patterns in relation to heart-attack risk?  
-A:  
+A: None of them show any significant patterns. Upon analyzing the chi-square test and T-test results, it was concluded that no feature displays any siginifance to the target variable. 
 
 Q: Are there any strong pairwise relationships or multicollinearity among clinical variables (e.g., Cholesterol, BloodPressure, BMI)?  
-A:  
+A: No multi-colinearity between features detected.
 
 Q: What trends or correlations stood out most clearly during your EDA?  
-A:  
+A: What satnds out is that the data is clean and surprisingly well-balanced which makes me think that it is a curated dataset not particularly useful to conduct analysis.
 
 🧰 5. EDA Summary & Preprocessing Plan  
 Q: What are your 3–5 key insights from the EDA about heart-attack risk factors?  
-A:  
+A: No significant patterns to note as the dataset seems very sythetic
 
 Q: Which features will you scale, encode, or exclude during preprocessing?  
-A:  
+A: Will have further look at blood pressure and get interaction features by using ratios
 
 
 ✅ Week 2: Feature Engineering & Preprocessing  
